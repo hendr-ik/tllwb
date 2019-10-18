@@ -2,14 +2,13 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+RELATIVE_URLS = False
+
 AUTHOR = 'Taell'
 SITENAME = 'Taell'
 SITEURL = ''
-
 PATH = 'content'
-
 TIMEZONE = 'Europe/Paris'
-
 DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
@@ -19,17 +18,19 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
-
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
-
+# pagination
 DEFAULT_PAGINATION = False
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+THEME = './theme'
+
+# Delete the output directory before generating new files.
+DELETE_OUTPUT_DIRECTORY = True
+
+# dont create following standard pages
+AUTHORS_SAVE_AS = None
+ARCHIVES_SAVE_AS = None
+CATEGORIES_SAVE_AS = None
+TAGS_SAVE_AS = None
+
+# keep this for access to page variable
+DIRECT_TEMPLATES = []
