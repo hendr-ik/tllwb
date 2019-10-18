@@ -1,4 +1,74 @@
+
+
+/* ---------------------------------------------------
+ROOTS
+----------------------------------------------------*/
+:root {
+--blue-mid: #232759;
+--blue-light: #9FA3D1;
+--blue-very-light: #F4F5FE;
+--red-mid: #FF5555;
+--white: #FFF;
+}
+
+
+/* ---------------------------------------------------
+BASICS
+----------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------
+LAYOUT & SPACER
+----------------------------------------------------*/
+.top-line{
+  width: 100%;
+  height: 6px;
+  background-color: var(--red-mid);
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-height: 800px) {
+  .logo-container {
+    margin: 25% 0 0 0;
+  }
+}
+@media only screen and (min-height: 801px) {
+  .logo-container {
+    margin: 35% 0 0 0;
+  }
+}
+.footer {
+  position: absolute;
+  bottom: 30px;
+  width:100%;
+  background: var(--blue-mid);
+  background-color: var(--blue-mid);
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+.footer-container p:first-child {
+  margin: 0 20px 0 0;
+}
+
+
+/* ---------------------------------------------------
+TYPO
+----------------------------------------------------*/
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--blue-mid);
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  word-wrap: break-word;
+  color: var(--blue-very-light);
 }
