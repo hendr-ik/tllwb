@@ -5,4 +5,10 @@ href: /legal-notice/
 
 ## Legal Notice
 
-temp temp temp
+### Information in accordance with Section 5 TMG
+![*](/theme/images/er35%!nsbx8.svg){:width="100px" height="52px"}
+
+
+### Contact Information
+E-Mail: [hello@taell.me](mailto:hello@taell.me)  
+Internet address: [www.taell.me](https://www.taell.me/)
