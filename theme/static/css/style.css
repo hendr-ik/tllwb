@@ -75,12 +75,12 @@ LAYOUT & SPACER
 }
 @media only screen and (max-height: 600px) {
   .logo-container {
-    margin: 70px 0 0 0;
+    margin: 40px 0 0 0;
   }
 }
 @media only screen and (min-height: 601px) and (max-height: 800px) {
   .logo-container {
-    margin: 150px 0 0 0;
+    margin: 100px 0 0 0;
   }
 }
 @media only screen and (min-height: 801px) {
