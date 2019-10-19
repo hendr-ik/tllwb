@@ -12,3 +12,7 @@ template: index
 ---
 
 That doesn’t happen when you navigate through a menu or fill out a form. That’s why *we believe in conversational experiences.*
+
+<div class="btn-wrapper">
+<a class="btn btn-color-red" href="mailto:hello@taell.me">Get in touch</a>
+</div>

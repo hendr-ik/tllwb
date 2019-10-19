@@ -148,3 +148,28 @@ a:focus {
   font-weight: 700;
   color: var(--blue-mid-light);
 }
+
+
+/* ---------------------------------------------------
+BUTTONS
+----------------------------------------------------*/
+.btn-wrapper {
+margin: 40px 0 0 0;
+}
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 5px;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.btn-color-red,
+.btn-color-red:visited,
+.btn-color-red:link,
+.btn-color-red:hover,
+.btn-color-red:active {
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--red-mid);
+}
