@@ -39,4 +39,5 @@ DIRECT_TEMPLATES = []
 STATIC_PATHS = ['extra'] 
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/.htaccess': {'path': '.htaccess'},
 }

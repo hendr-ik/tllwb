@@ -7,7 +7,7 @@ meta_robots: noindex
 ## Legal Notice
 
 ### Information in accordance with Section 5 TMG
-![*](/theme/images/er35%!nsbx8.svg){:width="104px" height="58px"}
+![*](/theme/images/nfgnfdhfdhdfh.svg){:width="104px" height="58px"}
 
 
 ### Contact Information
