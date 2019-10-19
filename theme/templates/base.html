@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>
-    {% block title %}{{ page.title }}{% endblock %}
-  </title>
+  <title>{% block title %}{{ page.title }}{% endblock %}</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="{{ page.description }}">
-  <link rel="shortcut icon" type="image/x-icon" href="/theme/images/favicon.ico">
+  {% if article %}
+      {% set object = article %}
+  {% elif page %}
+      {% set object = page %}
+  {% endif %}
+  {% if object and object.metadata['meta_robots'] %}
+  <meta name="robots" content="{{ object.metadata['meta_robots'] }}">
+  {% endif %}
+  <meta property="og:site_name" content="{{ SITENAME }}">
+  <meta property="og:locale" content="{{ DEFAULT_LANG }}">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/theme/images/taell-logo-social-media.jpg">
+  <meta name="twitter:image:alt" content="taell logo">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/theme/css/normalize.css">
   <link rel="stylesheet" href="/theme/css/fonts.css">
   <link rel="stylesheet" href="/theme/css/style.css?v1.0">
-
+  <link rel="shortcut icon" type="image/x-icon" href="/theme/images/favicon.ico">
 </head>
 <body>
   <div class="top-line">
   </div>
   <div class="logo-container">
-    <a href="/"><img src="/theme/images/taell-logo-white.svg" alt="Taell logo" width="160" height="75" class="logo"></a>
+    <a href="/"><img src="/theme/images/taell-logo-white.svg" alt="taell logo" width="120" height="57" class="logo"></a>
   </div>
   <div class="content">
     {% block content %}
     {% endblock %}
   </div>
-  <div class="footer">
+    <div class="footer">
       <div class="footer-container">
-      <p>
-        <a href="mailto:hello@taell.me">Contact</a>
-      </p>
-      <p>
-        <a href="/legal-notice/">Legal Notice</a>
-      </p>
+        <p>
+          <a href="mailto:hello@taell.me">Contact</a>
+        </p>
+        <p>
+          <a href="/legal-notice/">Legal Notice</a>
+        </p>
     </div>
   </div>
 </body>

@@ -2,11 +2,12 @@ Title: Legal Notice | Taell
 description: Taell creates user-centric conversation experiences.
 save_as: legal-notice/index.html
 href: /legal-notice/
+meta_robots: noindex
 
 ## Legal Notice
 
 ### Information in accordance with Section 5 TMG
-![*](/theme/images/er35%!nsbx8.svg){:width="100px" height="52px"}
+![*](/theme/images/er35%!nsbx8.svg){:width="104px" height="58px"}
 
 
 ### Contact Information

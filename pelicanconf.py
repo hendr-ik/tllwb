@@ -6,7 +6,7 @@ RELATIVE_URLS = False
 
 AUTHOR = 'Taell'
 SITENAME = 'Taell'
-SITEURL = ''
+#SITEURL = ''
 PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
@@ -34,3 +34,9 @@ TAGS_SAVE_AS = None
 
 # keep this for access to page variable
 DIRECT_TEMPLATES = []
+
+# copy robots.txt to root
+STATIC_PATHS = ['extra'] 
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+}
